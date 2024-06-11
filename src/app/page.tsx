@@ -1,8 +1,77 @@
+import Image from "next/image";
+import {
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiExpress,
+  SiNextdotjs,
+  SiTypescript,
+  SiPostgresql,
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiJest,
+  SiTensorflow,
+  SiFirebase,
+  SiSupabase,
+} from "react-icons/si";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none"></div>
+      <div className=" w-full max-w-5xl items-center justify-between  lg:flex">
+        <Image
+          src="/IMG_0656.jpg"
+          alt="pic of author"
+          width={300}
+          height={300}
+          className="rounded-full aspect-square object-cover "
+        />
+        <ul className="flex flex-wrap pt-6 text-4xl">
+          <li>
+            <SiJavascript className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiTypescript className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiHtml5 className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiCss3 className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiNextdotjs className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiReact className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiNodedotjs className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiExpress className="w-20 h-20 p-3" />
+          </li>
+
+          <li>
+            <SiPostgresql className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiTailwindcss className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiJest className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiTensorflow className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiFirebase className="w-20 h-20 p-3" />
+          </li>
+          <li>
+            <SiSupabase className="w-20 h-20 p-3" />
+          </li>
+        </ul>
       </div>
     </main>
   );

@@ -12,7 +12,7 @@ export default function NavBar() {
         className="block rounded-md px-16 py-2 text-base font-medium text-gray-300 hover:bg-violet-500 hover:text-white font-mono tracking-widest"
         aria-current="page"
       >
-        About me
+        About
       </a>
       <a
         href="/projects"
