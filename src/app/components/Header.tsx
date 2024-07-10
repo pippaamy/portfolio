@@ -1,12 +1,12 @@
-import Link from "next/link";
-
 export default function Header() {
   return (
-    <div className="flex   items-center justify-between p-24">
+    <div className="flex   items-center justify-between  text-xl">
       <header>
-        <h1 className="font-mono tracking-widest">
-          <Link href="/">PIPPA AUSTIN - FULL STACK DEVELOPER</Link>
-        </h1>
+        <a href="/">
+          <h1 className=" px-2 font-mono tracking-widest font-bold">
+            PIPPA AUSTIN
+          </h1>
+        </a>
       </header>
     </div>
   );

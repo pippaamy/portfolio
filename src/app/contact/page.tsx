@@ -1,7 +1,9 @@
+import ContactForm from "../components/ContactForm";
+
 export default function Contact() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Contact</h1>
+    <div className=" min-h-screen  items-center  pt-20 px-32">
+      <ContactForm />
     </div>
   );
 }

@@ -19,60 +19,66 @@ import {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className=" w-full max-w-5xl items-center justify-between  lg:flex">
-        <Image
-          src="/IMG_0656.jpg"
-          alt="pic of author"
-          width={300}
-          height={300}
-          className="rounded-full aspect-square object-cover "
-        />
-        <ul className="flex flex-wrap pt-6 text-4xl">
-          <li>
-            <SiJavascript className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiTypescript className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiHtml5 className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiCss3 className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiNextdotjs className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiReact className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiNodedotjs className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiExpress className="w-20 h-20 p-3" />
-          </li>
+      <h2 className="px-2 font-mono tracking-widest font-bold text-3xl">
+        PIPPA AUSTIN
+      </h2>
 
-          <li>
-            <SiPostgresql className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiTailwindcss className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiJest className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiTensorflow className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiFirebase className="w-20 h-20 p-3" />
-          </li>
-          <li>
-            <SiSupabase className="w-20 h-20 p-3" />
-          </li>
-        </ul>
-      </div>
+      <Image
+        src="/IMG_0656.jpg"
+        alt="pic of author"
+        width={300}
+        height={300}
+        className="rounded-full aspect-square object-cover "
+      />
+      <h2 className="px-2 font-mono tracking-widest font-bold text-2xl">
+        FULL STACK DEVELOPER
+      </h2>
+
+      <ul className="flex flex-wrap pt-6 text-4xl">
+        <li>
+          <SiJavascript className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiTypescript className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiHtml5 className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiCss3 className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiNextdotjs className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiReact className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiNodedotjs className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiExpress className="w-20 h-20 p-3" />
+        </li>
+
+        <li>
+          <SiPostgresql className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiTailwindcss className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiJest className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiTensorflow className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiFirebase className="w-20 h-20 p-3" />
+        </li>
+        <li>
+          <SiSupabase className="w-20 h-20 p-3" />
+        </li>
+      </ul>
     </main>
   );
 }
