@@ -2,7 +2,7 @@ import Header from "./Header";
 
 export default function NavBar() {
   return (
-    <div className="p-3 flex bg-indigo-400 justify-between ">
+    <div className=" flex bg-indigo-400 justify-between fixed w-full ">
       <Header />
       <a
         href="/"
