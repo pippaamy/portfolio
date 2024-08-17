@@ -40,9 +40,12 @@ export default function Projects() {
   ];
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div
+      className="flex min-h-screen flex-col  justify-between p-20
+    "
+    >
       {projects.map((project) => {
-        return <ProjectCard project={project} />;
+        return <ProjectCard project={project} key={project.slug} />;
       })}
     </div>
   );
