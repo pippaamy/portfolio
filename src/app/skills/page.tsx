@@ -5,6 +5,7 @@ import {
   FaPersonDressBurst,
 } from "react-icons/fa6";
 import TechStack from "../components/TechStack";
+import Image from "next/image";
 
 export default function Skills() {
   return (
@@ -15,11 +16,16 @@ export default function Skills() {
         <p className="p-3">
           Hi, I am Pippa! As a Junior Software Developer & Mentor at
           Northcoders, I have successfully transitioned from an international
-          orchestral musician to a dedicated and skilled developer.
-          <br />
-          <br />
-          About me something
+          orchestral musician to a dedicated and skilled developer. About me
+          something
         </p>
+        <Image
+          src="/images/profile/IMG_5629.png"
+          alt="pic of author"
+          width={300}
+          height={300}
+          className="rounded-full aspect-square object-cover "
+        />
       </div>
       <div>
         <h2 className="font-bold text-lg p-3 border-b-2"> Tech Stack</h2>
@@ -39,7 +45,7 @@ export default function Skills() {
           growth of new talent in the tech industry.
         </p>
         <h3 className="font-bold p-3"> Software Engineer</h3>
-        <br />
+
         <ul>
           <li className="p-2">
             •Implemented best practices in software engineering, including
@@ -97,7 +103,7 @@ export default function Skills() {
           </li>
         </ul>
       </div>
-      <br />
+
       <h2 className="font-bold text-lg p-3 border-b-2">
         Employment - non-tech
       </h2>

@@ -3,6 +3,17 @@ import { ProjectCard } from "../components/ProjectCard";
 export default function Projects() {
   const projects = [
     {
+      name: "Gone for a bork",
+      slug: "gone-bork",
+      type: "mobile",
+      techStack: ["JavaScript", "React Native", "Firebase", "TensorFlow"],
+      shortDescription: "Gamified dog identifaction app",
+      description: "",
+      githubLink: "https://github.com/pippaamy/dog-react-native",
+      liveLink: "",
+      images: [],
+    },
+    {
       name: "Good news",
       slug: "good-news",
       type: "mobile",
@@ -41,7 +52,7 @@ export default function Projects() {
 
   return (
     <div
-      className="flex min-h-screen flex-col  justify-between p-20
+      className="flex min-h-screen flex-col  justify-between p-16
     "
     >
       {projects.map((project) => {
