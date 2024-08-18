@@ -123,15 +123,15 @@ const ProjectPage: FunctionComponent<ProjectPageProps> = ({ params }) => {
         </div>
 
         <p className="py-4 whitespace-pre-line">{project.description}</p>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center flex-wrap">
           {project.images.map((image, index) => {
             return (
-              <div key={index} className="px-2">
+              <div key={index} className="px-2 p-6">
                 <Image
                   src={image}
-                  alt="pic of author"
-                  width={300}
-                  height={300}
+                  alt="picture of project"
+                  width={350}
+                  height={820}
                 />
               </div>
             );

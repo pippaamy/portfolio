@@ -1,9 +1,4 @@
-import {
-  FaGraduationCap,
-  FaComputer,
-  FaBlackTie,
-  FaPersonDressBurst,
-} from "react-icons/fa6";
+import { FaGraduationCap, FaComputer, FaBlackTie } from "react-icons/fa6";
 import TechStack from "../components/TechStack";
 import Image from "next/image";
 
@@ -12,12 +7,11 @@ export default function Skills() {
     <div className="min-h-100 p-20 font-mono">
       <div>
         <h2 className="font-bold text-lg p-3 border-b-2">About me </h2>
-        <FaPersonDressBurst className="w-20 h-20 p-3" />
+
         <p className="p-3">
-          Hi, I am Pippa! As a Junior Software Developer & Mentor at
-          Northcoders, I have successfully transitioned from an international
-          orchestral musician to a dedicated and skilled developer. About me
-          something
+          Hi, I'm Pippa! As a Junior Software Developer & Mentor at Northcoders,
+          I have successfully transitioned from an international orchestral
+          musician to a dedicated and skilled developer.
         </p>
         <Image
           src="/images/profile/IMG_5629.png"
@@ -28,11 +22,13 @@ export default function Skills() {
         />
       </div>
       <div>
-        <h2 className="font-bold text-lg p-3 border-b-2"> Tech Stack</h2>
+        <h2 className="font-bold text-lg p-3 border-b-2 pt-6"> Tech Stack</h2>
         <TechStack />
       </div>
       <div>
-        <h2 className="font-bold text-lg p-3 border-b-2">Employment - Tech</h2>
+        <h2 className="font-bold text-lg p-3 border-b-2 pt-6">
+          Employment - Tech
+        </h2>
         <h3 className="p-3 font-bold">
           NORTHCODERS - SOFTWARE ENGINEER & MENTOR
         </h3>
@@ -104,7 +100,7 @@ export default function Skills() {
         </ul>
       </div>
 
-      <h2 className="font-bold text-lg p-3 border-b-2">
+      <h2 className="font-bold text-lg p-3 border-b-2 pt-6">
         Employment - non-tech
       </h2>
       <FaBlackTie className="w-20 h-20 p-3" />
@@ -132,7 +128,7 @@ export default function Skills() {
         <li className="p-2"> • Performed in front of thousands of people</li>
       </ul>
 
-      <h2 className="font-bold text-lg p-3 border-b-2">Education</h2>
+      <h2 className="font-bold text-lg p-3 border-b-2 pt-6">Education</h2>
       <FaGraduationCap className="w-20 h-20 p-3" />
       <h3 className="p-3 font-bold">
         Northcoders - Skills Bootcamp in Software Development

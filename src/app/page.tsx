@@ -9,7 +9,7 @@ export default function Home() {
       </h2>
 
       <Image
-        src="/IMG_0656.jpg"
+        src="/images/profile/IMG_0656.jpg"
         alt="pic of author"
         width={300}
         height={300}
