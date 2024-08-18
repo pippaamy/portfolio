@@ -9,9 +9,9 @@ export default function Skills() {
         <h2 className="font-bold text-lg p-3 border-b-2">About me </h2>
 
         <p className="p-3">
-          Hi, I'm Pippa! As a Junior Software Developer & Mentor at Northcoders,
-          I have successfully transitioned from an international orchestral
-          musician to a dedicated and skilled developer.
+          Hi, I&apos;m Pippa! As a Junior Software Developer & Mentor at
+          Northcoders, I have successfully transitioned from an international
+          orchestral musician to a dedicated and skilled developer.
         </p>
         <Image
           src="/images/profile/IMG_5629.png"

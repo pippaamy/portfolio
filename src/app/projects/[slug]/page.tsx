@@ -52,7 +52,8 @@ const projects = [
     type: "mobile",
     techStack: ["JavaScript", "React Native", "Firebase", "TensorFlow"],
     shortDescription: "Gamified dog identifaction app",
-    description: "",
+    description:
+      "This App is a gamified dog breed identifier. You take a picture of a dog and it will match with a breed. It will give you a card with some fun facts about the breed. These will be shown within the gallery. You can see how many of the 50 dogs you have collected and compare with friends on the app. If you take a picture and it isn't a collectable you have the option to save it anyway. ",
     githubLink: "https://github.com/pippaamy/dog-react-native",
     liveLink:
       " https://www.linkedin.com/posts/pippa-austin-52a627b2_for-our-group-project-team-husky-at-northcoders-activity-6981533689855754240-goQh?utm_source=share&utm_medium=member_ios",
