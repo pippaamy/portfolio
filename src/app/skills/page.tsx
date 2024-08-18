@@ -1,18 +1,15 @@
 import { FaGraduationCap, FaComputer, FaBlackTie } from "react-icons/fa6";
 import TechStack from "../components/TechStack";
 import Image from "next/image";
+import { aboutMe } from "../data";
 
 export default function Skills() {
   return (
-    <div className="min-h-100 p-20 font-mono">
+    <div className="min-h-100 p-10 font-mono">
       <div>
         <h2 className="font-bold text-lg p-3 border-b-2">About me </h2>
 
-        <p className="p-3">
-          Hi, I&apos;m Pippa! As a Junior Software Developer & Mentor at
-          Northcoders, I have successfully transitioned from an international
-          orchestral musician to a dedicated and skilled developer.
-        </p>
+        <p className="p-3">{aboutMe}</p>
         <Image
           src="/images/profile/IMG_5629.png"
           alt="pic of author"
@@ -55,7 +52,7 @@ export default function Skills() {
             •Collaborated with different teams to plan tickets using Figma
           </li>
           <li className="p-2">
-            •Utilized agile methodologies to prioritize tasks and deliver
+            •Utilised agile methodologies to prioritise tasks and deliver
             features efficiently
           </li>
           <li className="p-2">

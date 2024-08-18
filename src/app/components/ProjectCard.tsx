@@ -15,17 +15,6 @@ type ProjectProps = {
   };
 };
 
-type Project = {
-  name: string;
-  slug: string;
-  type: string;
-  techStack: string[];
-  shortDescription: string;
-  description: string;
-  githubLink: string;
-  liveLink: string;
-  images: string[];
-};
 export const ProjectCard: FunctionComponent<ProjectProps> = ({ project }) => {
   return (
     <div className="flex flex-col font-mono border-y-2 border-accent p-5 md:p-4">
