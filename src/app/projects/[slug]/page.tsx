@@ -47,19 +47,21 @@ type ProjectPageProps = {
 const ProjectPage: FunctionComponent<ProjectPageProps> = ({ params }) => {
   const project = projects.filter((project) => project.slug === params.slug)[0];
   return (
-    <section>
-      <div
-        className="flex min-h-screen  p-20
+    <section
+      className="flex flex-col min-h-screen  p-20
     "
+    >
+      <Link href="/projects">
+        <button className="text-primary-text mt-8 ml-8 md:ml-60">
+          Back to all
+        </button>
+      </Link>
+
+      <li
+        className="text-primary-text p-8 md:px-60 list-none"
+        key={project.name}
       >
-        <Link href="/projects">
-          <button className="text-primary-text mt-8 ml-8 md:ml-60">
-            Back to all
-          </button>
-        </Link>
-      </div>
-      <li className="text-primary-text p-8 md:px-60" key={project.name}>
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between">
+        <div>
           <div>
             <h3 className="text-4xl font-bold">{project.name}</h3>
             <ul className="flex flex-wrap pt-2">
@@ -67,7 +69,7 @@ const ProjectPage: FunctionComponent<ProjectPageProps> = ({ params }) => {
                 return (
                   <li
                     key={index}
-                    className="px-2 py-1 mr-2 mb-2 bg-accent text-accent-text font-semibold"
+                    className="px-2 py-1 mr-2 mb-2 bg-accent text-accent-text font-semibold "
                   >
                     {skill}
                   </li>
@@ -76,20 +78,24 @@ const ProjectPage: FunctionComponent<ProjectPageProps> = ({ params }) => {
             </ul>
           </div>
 
-          <div className="">
+          <div className="flex ">
             <Link href={project.githubLink}>
               Github
-              <FaGithub />{" "}
+              <FaGithub />
             </Link>
 
             <Link href={project.liveLink}>
-              {" "}
-              Live <CgWebsite />{" "}
+              Live <CgWebsite />
             </Link>
           </div>
         </div>
 
         <p className="py-4 whitespace-pre-line">{project.description}</p>
+        <div className="flex justify-center items-center">
+          {project.images.map((image, index) => {
+            return <div key={index} className="px-2"></div>;
+          })}
+        </div>
       </li>
     </section>
   );
